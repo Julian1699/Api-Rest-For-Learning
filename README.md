@@ -27,7 +27,7 @@ Esta API RESTful proporciona una manera de gestionar datos de productos utilizan
 
 # Documentación
 
-La documentación de la API está disponible en Swagger: https://localhost:8080/swagger-ui.html.
+La documentación de la API está disponible en Swagger: http://localhost:8080/swagger-ui/index.html#/.
 
 # Endpoints
 
