@@ -9,7 +9,7 @@ Como el api se encuentra dockerizada es necesario:
    - $ git clone -b main-dockerized https://github.com/Julian1699/Api-Rest-Intermedian.git
 2) Una vez clonado el repositorio, se debe abrir una terminal (powershell o git bash) dentro del directorio que contenga el proyecto.
 3) Ejecutar el comando de docker $ docker compose up
-4) Consultar como consumir el API en la ruta generada por el Swagger: https://localhost:8080/swagger-ui.html.
+4) Consultar como consumir el API en la ruta generada por el Swagger: http://localhost:8080/swagger-ui/index.html#/
    
 # API de Productos
 
@@ -37,7 +37,7 @@ Esta API RESTful proporciona una manera de gestionar datos de productos utilizan
 
 # Documentación
 
-La documentación de la API está disponible en Swagger: https://localhost:8080/swagger-ui.html.
+La documentación de la API está disponible en Swagger: http://localhost:8080/swagger-ui/index.html#/
 
 # Endpoints
 
