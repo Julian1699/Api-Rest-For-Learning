@@ -1,5 +1,5 @@
 # Api-Rest-Intermedian
-| API REST |  SpringBoot | PostgreSQL | JPA | Swagger | Docker |
+| API REST |  SpringBoot | Spring JPA | Hibernate | PostgreSQL | Swagger | Docker |
 
 # Configuración de la Base de Datos:
 
