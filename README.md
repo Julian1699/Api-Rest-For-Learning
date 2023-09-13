@@ -46,11 +46,9 @@ La documentación de la API está disponible en Swagger: http://localhost:8080/s
 
 Los endpoints de la API son los siguientes:
 
-- GET /api/v1/product/all: Obtiene todos los productos.
-- POST /api/v1/product/post: Agrega un nuevo producto.
 - PUT /api/v1/product/put/{id}: Actualiza un producto existente.
-- DELETE /api/v1/product/delete/{id}: Elimina un producto existente.
-- GET /api/v1/product/id/{id}: Obtiene un producto por ID.
+- POST /api/v1/product/post: Agrega un nuevo producto.
 - GET /api/v1/product/search/{search}: Busca productos por nombre, referencia o categoría.
-
-
+- GET /api/v1/product/id/{id}: Obtiene un producto por ID.
+- GET /api/v1/product/all: Obtiene todos los productos.
+- DELETE /api/v1/product/delete/{id}: Elimina un producto existente.
