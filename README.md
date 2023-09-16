@@ -7,10 +7,41 @@
 Como el api se encuentra dockerizada es necesario:
 
 1) Clonar el repositorio especifico de la rama main-security-in-memory-dockerized, se puede realizar con la siguiente linea de comandos:
-   - $ git clone -b main-security-in-memory-dockerized https://github.com/Julian1699/Api-Rest-Intermedian.git
-2) Una vez clonado el repositorio, se debe abrir una terminal (powershell o git bash) dentro del directorio que contenga el proyecto.
-3) Ejecutar el comando de docker
+   
+   - $ git clone -b main-security-in-database-dockerized https://github.com/Julian1699/Api-Rest-Intermedian.git
+     
+3) Una vez clonado el repositorio, se debe abrir una terminal (powershell o git bash) dentro del directorio que contenga el proyecto.
+   
+4) Ejecutar el comando de docker
+   
    - $ docker compose up
+     
+6) Una vez levantandos los contenedores se procede a realizar lo siguiente:
+   
+7) Ejecutar el siguiente comando en una terminal git o power shell para entrar en el contenedor de la base de datos:
+   
+   - $ winpty docker exec -it db-postgres bash
+     
+   ![image](https://github.com/Julian1699/Api-Rest-For-Learning/assets/114323630/53eeb015-cdb9-4b69-b9ba-6ee624fe0aa7)
+
+8) Ejecutar el siguiente comando en una terminal git bash o power shell para entrar en la base de datos:
+   
+   - $ psql -U postgres -d tryapi
+  
+   ![image](https://github.com/Julian1699/Api-Rest-For-Learning/assets/114323630/074eb095-6ac8-44d3-8155-0c47d91e2283)
+     
+10) Ahora se debe ubicar el archivo "data.sql" que se encuentra dentro del directorio "resources":
+
+   ![image](https://github.com/Julian1699/Api-Rest-For-Learning/assets/114323630/cd4d7162-1776-473d-8ea1-b464836c7097)
+
+7) Tomar los datos que se encuentran allí:
+
+   ![image](https://github.com/Julian1699/Api-Rest-For-Learning/assets/114323630/b3760a93-11d2-4652-b718-beec165e6f73)
+
+8) Pegar los datos en la terminal de la base de datos para insertarlos:
+
+   ![image](https://github.com/Julian1699/Api-Rest-For-Learning/assets/114323630/c7ff47f4-0af8-4672-9e4e-cad3c9add258)
+
 4) Consultar como consumir el API en la ruta generada por el Swagger: http://localhost:8080/swagger-ui/index.html#/
 
 # Configuración de Seguridad:
