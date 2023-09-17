@@ -2,20 +2,42 @@
 
 | API REST |  SpringBoot | Spring JPA | Spring Security | Hibernate | PostgreSQL | Swagger |
 
-# DOCKER
+# PRIMERO QUE TODO:
 
-Como el api se encuentra dockerizada es necesario:
+1) Clonar el repositorio específico de la rama main-security-in-database. Esto se puede realizar con la siguiente línea de comandos:
+   
+   - $ git clone -b main-security-in-database https://github.com/Julian1699/Api-Rest-For-Learning.git
 
-1) Clonar el repositorio especifico de la rama main-security-in-memory-dockerized, se puede realizar con la siguiente linea de comandos:
-   - $ git clone -b main-security-in-memory-dockerized https://github.com/Julian1699/Api-Rest-Intermedian.git
-2) Una vez clonado el repositorio, se debe abrir una terminal (powershell o git bash) dentro del directorio que contenga el proyecto.
-3) Ejecutar el comando de docker
-   - $ docker compose up
-4) Consultar como consumir el API en la ruta generada por el Swagger: http://localhost:8080/swagger-ui/index.html#/
+3) Configuración de la Base de Datos:
+
+Antes de ejecutar la API sin problemas, es importante configurar la base de datos. En este proyecto, hemos utilizado PostgreSQL como gestor de base de datos, pero el proyecto está diseñado para admitir conexiones de otros gestores de bases de datos como MySQL y Oracle SQL, ya que las dependencias necesarias se encuentran definidas en el archivo pom.xml.
+
+![Imagen](https://github.com/Julian1699/Api-Rest-Intermedian/assets/114323630/74cfaa72-1133-46e3-9edd-fc57af78a667)
+
+3) Ejecución del proyecto para la creación de la estructura de la base de datos:
+
+El proyecto debe ser ejecutado en su método principal, para que Hibernate construya la estructura de la base de datos en la cual se realizarán los pasos 4 y 5.
+
+![Imagen](https://github.com/Julian1699/Api-Rest-For-Learning/assets/114323630/574c442c-2a77-4ce9-b8fe-93761088c6ba)
+
+4) Poblar la base de datos:
+
+Para poblar la base de datos, hemos incluido un archivo llamado "data for testing.sql" dentro del directorio "resources".
+
+![Imagen](https://github.com/Julian1699/Api-Rest-For-Learning/assets/114323630/7d17a482-cc25-42f5-9930-0b06b0828abf)
+
+5) Ejecutar los comandos SQL que se encuentran en el archivo mencionado anteriormente. Esto debe ser ejecutado en el gestor de base de datos que se esté utilizando.
+
+![Imagen](https://github.com/Julian1699/Api-Rest-For-Learning/assets/114323630/c6a66999-eb1b-4938-8748-ce2eee01d819)
+
+6) Ahora puedes probar la funcionalidad de la API mediante Swagger en la siguiente URL:
+
+URL de Swagger: [http://localhost:8080/swagger-ui/index.html#/](http://localhost:8080/swagger-ui/index.html#/)
+
 
 # Configuración de Seguridad:
 
-En este proyecto de Spring Security, se han creado dos usuarios en la memoria que requieren autenticación y tienen diferentes niveles de autorización.
+En este proyecto de Spring Security, se han creado dos usuarios en la base de datos que protegen el API brindando autenticación y tienen diferentes niveles de autorización.
 
 - Primer Usuario (admin):
 
@@ -87,5 +109,3 @@ Los endpoints de la API son los siguientes:
 - GET /api/v1/product/id/{id}: Obtiene un producto por ID.
 - GET /api/v1/product/all: Obtiene todos los productos.
 - DELETE /api/v1/product/delete/{id}: Elimina un producto existente.
-
-
