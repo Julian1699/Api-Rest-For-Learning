@@ -2,6 +2,10 @@
 
 | API REST |  SpringBoot | Spring JPA | Spring Security | Hibernate | PostgreSQL | Swagger |
 
+# Clonar
+
+$ git clone -b main-security-in-memory https://github.com/Julian1699/Api-Rest-For-Learning.git
+
 # Configuración de la Base de Datos:
 
 Antes de ejecutar la API sin problemas, es importante configurar la base de datos. En este proyecto, hemos utilizado PostgreSQL como gestor de base de datos, pero el proyecto está diseñado para admitir conexiones de otros gestores de bases de datos como MySQL y Oracle SQL, ya que las dependencias necesarias se encuentran definidas en el archivo pom.xml.
