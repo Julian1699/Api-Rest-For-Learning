@@ -2,6 +2,8 @@
 
 | API REST |  SpringBoot | Spring JPA | Hibernate | PostgreSQL | Swagger |
 
+![API REST SENCILLA](https://github.com/Julian1699/Api-Rest-For-Learning/assets/114323630/598c8417-7f2b-4423-8cf8-f177cf5945f5)
+
 # Configuración de la Base de Datos:
 
 Antes de ejecutar la API sin problemas, es importante configurar la base de datos. En este proyecto, hemos utilizado PostgreSQL como gestor de base de datos, pero el proyecto está diseñado para admitir conexiones de otros gestores de bases de datos como MySQL y Oracle SQL, ya que las dependencias necesarias se encuentran definidas en el archivo pom.xml.
