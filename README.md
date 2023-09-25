@@ -2,7 +2,7 @@
 
 | API REST |  SpringBoot | Spring JPA | Hibernate | PostgreSQL | Swagger |
 
-![API REST SENCILLA](https://github.com/Julian1699/Api-Rest-For-Learning/assets/114323630/598c8417-7f2b-4423-8cf8-f177cf5945f5)
+![API REST EASY](https://github.com/Julian1699/Api-Rest-For-Learning/assets/114323630/b1d6a79e-36d0-4d12-80b5-d765d6da218a)
 
 # Configuración de la Base de Datos:
 
